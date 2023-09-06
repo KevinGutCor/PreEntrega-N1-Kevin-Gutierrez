@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;700&display=swap');
+/* 200 - 300 - 400 - 500 - 700 */
+
+:root{
+   --clr-black: #0D0D0D;
+   --clr-white:#FEFEFE;
+   --clr-dark-green:#249183;
+   --clr-yellow: #F7DF08;
+   --font-barlow:'Barlow Condensed', sans-serif;
+}
+
+a{text-decoration: none;}
+
+.header{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem 0;
+   box-shadow: 0px 5px 15px rgb(233, 233, 233);
+}
+
+.header-logo{
+   width: 160px;
+   height: 65px;
+}
+
+/* nav */
+.nav-contenedor{
+   display: flex;
+   gap: 2.5rem;
+   list-style: none;
+}
+.nav-link{
+   font-family: var(--font-barlow);
+   color: var(--clr-black);
+   font-size: 1.5rem;
+   font-weight: 500;
+   border-bottom:2px solid var(--clr-white) ;
+}
+.nav-link:hover{
+   color: var(--clr-dark-green);
+   border-bottom: 2px solid var(--clr-dark-green);
+   transition: .5s;
+}
+
+/* search */
+.header-btns{
+   display: flex;
+   gap: 2rem;
+}
+.header-img-search{
+   width: 30px;
+   cursor: pointer;
+}
+
+/* user */
+.header-user{
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   border-left: 2px solid var(--clr-dark-green);
+   padding-left: 10px;
+}
+.header-img-user{
+   width: 30px;
+   cursor: pointer;
+}
+.header-user-title{
+   font-size: 1.2rem;
+   font-family: var(--font-barlow);
+   cursor: pointer;
+}
+.header-user-title:hover{
+   color: var(--clr-dark-green);
+}
